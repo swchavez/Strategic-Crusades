@@ -228,3 +228,66 @@ about
   flex-direction: column;
   padding: 30px 200px 10px 200px;
 }
+
+/*
+  ========================================
+Connect
+  ========================================
+*/
+
+.contactpage{
+  display: flex;
+  justify-content: center;
+  justify-items: auto;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px 200px 10px 200px;
+  }
+  
+  .contactpage h2{
+    text-align: center;
+    font-size: 50px;
+    border-bottom: solid black;
+    margin: 0 10px 20px 0;
+  }
+  
+  .contactpage a{
+  color:#000000;
+  margin: 15px 0;
+  }
+  
+  .contactpage p{
+  padding: 30px 0;
+  }
+  
+  .contactpage form {
+    padding-top: 100px;
+  }
+
+  .register-group label {
+    color: #000000;
+    cursor: pointer;
+    font-weight: 400;
+  }
+  .register-group input,
+  .register-group select,
+  .register-group textarea {
+    border: 1px solid #c6c9cc;
+    border-radius: 5px;
+    color: #888;
+    display: block;
+    margin: 5px 0 27px 0;
+    padding: 5px 8px;
+  }
+  .register-group input,
+  .register-group textarea {
+    width: 100%;
+  }
+  .register-group select {
+    height: 34px;
+    width: 60px;
+  }
+  .register-group textarea {
+    height: 78px;
+  }
