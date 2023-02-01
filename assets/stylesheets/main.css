@@ -348,11 +348,58 @@ Connect
       vertical-align: baseline;
     }
 
-    form{
-      display: none;
+    .intro{
+      display: inline;
+      margin: 10px;
+    }
+
+    .intro img{
+      align-items: center;
+      margin-left: 100px;
+    }
+
+    .intro p{
+      margin: 0 15px
+    }
+
+    .us{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .us h3{
+      display: flex;
+      justify-content: center;
     }
 
 
+    .aboutintro{
+      display: flex;
+      flex-direction: column;
+      margin-left: 0;
+    }
+
+    .aboutintro img{
+      width: 50%;
+    }
+
+    .team{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .experiencelists{
+      display: flex;
+      flex-direction: column;
+      margin: 0 60px;
+    }
+
+   form{
+      display: none;
+    }
+
+    
   @media (min-width: 701px) and (max-width: 900px){
     .intro{
       background:;
