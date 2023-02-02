@@ -1,7 +1,10 @@
+  /******************************************
+  /* Responsive STYLES
+  /*******************************************/
+  @media screen and (max-width: 850px) {
 /* 
 Reset
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,33 +25,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 10px;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*
-  ========================================
-  nav
-  ========================================
+/* 
+Header & Footer
 */
 .primary-nav {
   font-size: 14px;
@@ -58,7 +36,8 @@ table {
   padding-top: 50px;
 }
 .nav {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .primary-header a,
@@ -72,15 +51,13 @@ table {
 
 .nav li {
   display: inline-block;
-  margin: 0 10px;
-  vertical-align:top;
-}
-.nav li:last-child {
-  margin-right: 0;
+  margin: 10px;
+  vertical-align: top;
 }
 
 .primary-footer{
   padding-top: 50px;
+  padding-bottom: 15px;
 }
 
 .socmed{
@@ -96,16 +73,15 @@ table {
   vertical-align: top;
 }
 
-/*
-  ========================================
-  Custom Styles
-  ========================================
+
+/* 
+Custom Styles
 */
-body {
+
+body{
   background: #f4fafd;
-  color: black;
-  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 30px 200px 10px 200px;
+  color: darkgreen;;
+  margin: 0 15px;
 }
 
 h1, h2, h3, h4 {
@@ -113,287 +89,136 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 25px;
   line-height: 44px;
+  text-transform: capitalize;
 }
 h2 {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 44px;
 }
 h3 {
-  font-size: 21px;
+  font-size: 18px;
 }
 h4 {
-  font-size: 18px;
+  font-size: 16px;
 }
 h5 {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
 }
-strong {
-  font-weight: 400;
-}
 p{
   font-size: 15px;
   font-weight: 381;
+  padding: 5px 0;
 }
 
-  /*
-  ========================================
-  Buttons
-  ========================================
+/* 
+Buttons
 */
-
 .btn {
   border-radius: 5px;
-  color: rgb(0, 131, 55);
+  color: rgb(16, 0, 117);
   cursor: crosshair;
-  display: inline-block;
   font-weight: 400;
   letter-spacing: .5px;
-  margin: 10;
   text-transform: uppercase;
-  text-align: center;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  justify-items: auto;
-  align-content: center;
-  align-items: center;
-  padding: 30px 10px 10px 10px;
+  padding: 10px;
   }
-
 
   .btn-alt:hover {
-    background: #fff;
-    color: #0051ff;
+    background: rgb(255, 255, 255);
+    color: #960000;
   }
 
- 
-/*
-  ========================================
-Index
-  ========================================
+/* 
+index
 */
+
 .intro{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 30px 200px 10px 200px;
-}
-
-.intro h1{
-  text-transform: capitalize;
-  text-align: center;
-  padding: 20px 0;
 }
 
 .intro img{
-  width: 300px;
+  width: 90%;
 }
 
-.intro p{
-  padding: 5px 0;
-}
-
-
-/*
-  ========================================
-about
-  ========================================
-*/
-
-.aboutintro {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 50px;
-}
-
-.aboutintro p{
-  display: flex;
-  flex-direction: column;
-  padding-left: 100px;
-}
-
-.team h2{
+.team{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 15px;
-}
-
-.us{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 30px 200px 10px 200px;
+  flex-direction: column;
 }
 
 .us img{
-  width: 300px;
+  width: 90%;
+}
+
+
+.us h3{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+/* 
+about
+*/
+
+.aboutintro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutintro img{
+   width: 50%;
+}
+
+.team{
+  display: flex;
+  flex-direction: column;
+}
+
+.experiencelists{
+  display: flex;
+  flex-direction: column;
 }
 
 .experience h2{
   display: flex;
   justify-content: center;
-  padding-top: 25px;
+  align-items: center;
+  border-top: 2px solid black;
 }
 
-.experiencelists{
-  display: flex;
-  justify-content: space-around;
-  margin: 0 200px;
-  padding-top: 15px;
+#list2 {
+  border-bottom: 2px solid black;
 }
 
-/*
-  ========================================
+/* 
 Connect
-  ========================================
 */
 
-.contactpage{
+.contactpage h2{
   display: flex;
   justify-content: center;
-  justify-items: auto;
-  align-content: center;
   align-items: center;
-  flex-direction: row;
-  padding: 0px 200px 10px 200px;
-  }
-  
-  .contactpage h2{
-    text-align: center;
-    font-size: 50px;
-    border-bottom: solid black;
-    margin: 0 10px 20px 0;
-  }
-  
-  .contactpage a{
-  color:#000000;
-  margin: 15px 0;
-  }
-  
-  .contactpage p{
-  padding: 30px 0;
-  }
-  
-  .contactpage div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+  border-bottom: 2px solid black;
+}
 
-  .contactpage form {
-    padding-top: 100px;
-  }
-
-  .register-group label {
-    color: #000000;
-    cursor: pointer;
-    font-weight: 400;
-  }
-  .register-group input,
-  .register-group select,
-  .register-group textarea {
-    border: 1px solid #c6c9cc;
-    border-radius: 5px;
-    color: #888;
-    display: block;
-    margin: 5px 0 27px 0;
-    padding: 5px 8px;
-  }
-  .register-group input,
-  .register-group textarea {
-    width: 100%;
-  }
-  .register-group select {
-    height: 34px;
-    width: 60px;
-  }
-  .register-group textarea {
-    height: 78px;
-  }
-
-
-
-    /******************************************
-  /* Responsive STYLES
-  /*******************************************/
-
-  @media screen and (max-width: 700px) {
-
-    html, body, div, span, applet, object, iframe,
-    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
-    del, dfn, em, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
-    dl, dt, dd, ol, ul, li,
-    fieldset, form, label, legend,
-    table, caption, tbody, tfoot, thead, tr, th, td,
-    article, aside, canvas, details, embed,
-    figure, figcaption, footer, header, hgroup,
-    menu, nav, output, ruby, section, summary,
-    time, mark, audio, video {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-    }
-
-    .intro{
-      display: inline;
-      margin: 10px;
-    }
-
-    .intro img{
-      align-items: center;
-      margin-left: 30px;
-    }
-
-    .intro p{
-      margin: 0 15px
-    }
-
-    .us{
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-
-    .us h3{
-      display: flex;
-      justify-content: center;
-    }
-
-
-    .aboutintro{
-      display: flex;
-      flex-direction: column;
-      margin-left: 0;
-    }
-
-    .aboutintro img{
-      width: 50%;
-    }
-
-    .team{
-      display: flex;
-      flex-direction: column;
-    }
-
-    .experiencelists{
-      display: flex;
-      flex-direction: column;
-      margin: 0 60px;
-    }
+.contactpage div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0;
+}
 
    form{
       display: none;
