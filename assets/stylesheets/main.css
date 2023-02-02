@@ -1,4 +1,262 @@
-  /******************************************
+    /* 
+    Reset
+    */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+
+/* 
+Header & Footer
+*/
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.primary-header a,
+.primary-footer a {
+  color: black;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #344945;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 10px;
+  vertical-align: top;
+}
+
+.primary-footer{
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+.socmed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socmed img {
+  padding: 10px;
+  height: 50px;
+  margin: 22px 0 22px 0;
+  vertical-align: top;
+}
+
+
+/* 
+Custom Styles
+*/
+
+body{
+  background: #f4fafd;
+  color: darkgreen;;
+  margin: 0 250px;
+}
+
+h1, h2, h3, h4 {
+  color: #648880;
+}
+
+h1 {
+  font-size: 25px;
+  line-height: 44px;
+  text-transform: capitalize;
+}
+h2 {
+  font-size: 20px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+p{
+  font-size: 15px;
+  font-weight: 381;
+  padding: 5px 0;
+}
+
+/* 
+Buttons
+*/
+.btn {
+  border-radius: 5px;
+  color: rgb(16, 0, 117);
+  cursor: crosshair;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  padding: 10px;
+  }
+
+  .btn-alt:hover {
+    background: rgb(255, 255, 255);
+    color: #960000;
+  }
+
+/* 
+Index
+*/
+
+  .intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .intro img{
+    width: 35%;
+  }
+  
+  .team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .us div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .us img{
+    width: 25%;
+    padding-bottom: 25px;
+  }
+  
+  
+  .us h3{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+  }
+
+/*
+  ========================================
+about
+  ========================================
+*/
+
+.aboutintro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.aboutintro p{
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+}
+
+.team h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.us{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.us div{
+  padding-right: 15px;
+}
+
+.us img{
+  width: 300px;
+}
+
+.experience h2{
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.experiencelists{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+
+.contactpage h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+/*
+  ========================================
+Connect
+  ========================================
+*/
+.contactpage div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+   form{
+      display: none;
+    }
+
+
+
+
+
+
+    
+
+
+/******************************************
   /* Responsive STYLES
   /*******************************************/
   @media screen and (max-width: 850px) {
@@ -154,6 +412,13 @@ index
   flex-direction: column;
 }
 
+.us div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .us img{
   width: 100%;
 }
@@ -163,6 +428,9 @@ index
   display: flex;
   justify-content: center;
   padding-bottom: 25px;
+  font-size: large;
+  padding-bottom: 25px;
+  padding-left: 0;
 }
 
 /* 
@@ -180,9 +448,26 @@ about
    width: 50%;
 }
 
+.aboutintro p{
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+}
+
 .team{
   display: flex;
   flex-direction: column;
+}
+
+.us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.us div{
+  padding-right: 0px;
 }
 
 .experiencelists{
